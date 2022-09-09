@@ -1,0 +1,11 @@
+{
+    "movies": [
+        {
+            "imageUrl": "https://postercim.net/wp-content/uploads/2018/10/la-la-land-film-posteri-satin-al.png", 
+            "name": "La La Land",
+            "rating": "8.0", 
+            "genres": "Musical, Romance, Comedy, Drama", 
+            "language": "English",
+        }
+    ]
+}
