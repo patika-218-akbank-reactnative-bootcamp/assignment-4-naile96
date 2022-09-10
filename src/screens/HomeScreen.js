@@ -5,7 +5,6 @@ import {
   Image,
   Pressable,
   StyleSheet,
-  Text,
   View,
 } from 'react-native';
 import Movie from '../components/Movie';

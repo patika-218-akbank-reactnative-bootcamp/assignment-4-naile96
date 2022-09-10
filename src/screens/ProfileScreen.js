@@ -1,13 +1,7 @@
-import {
-  Text,
-  SafeAreaView,
-  View,
-  StyleSheet,
-  Image,
-  Button,
-} from 'react-native';
+import {Text, SafeAreaView, View, StyleSheet, Image} from 'react-native';
 import React from 'react';
 import {AsyncStorage} from '@react-native-async-storage/async-storage';
+import NewButton from '../components/NewButton';
 
 const ProfileScreen = ({navigation}) => {
   const logout = async () => {
@@ -17,20 +11,29 @@ const ProfileScreen = ({navigation}) => {
 
     navigation.navigate('WelcomeScreen');
   };
+
   return (
     <SafeAreaView style={styles.conainer}>
       <View style={styles.imageContainer}>
         <Image style={{height: 190, width: 190}} source={null} />
 
-        <Text style={styles.nameText}>Telegram</Text>
+        <Text style={styles.nameText}>movie</Text>
         <Text>Phone number</Text>
       </View>
       <View>
-        <Button onPress={() => navigation.navigate('ThemeScreen')} />
-        <Button onPress={() => navigation.navigate('EditScreen')} />
+        <NewButton
+          text="Theme"
+          title="Theme"
+          onPress={() => navigation.navigate('Theme')}
+        />
+        <NewButton
+          text="Edit Profile"
+          title="Edit"
+          onPress={() => navigation.navigate('Edit')}
+        />
       </View>
       <View>
-        <Button text="log out" onPress={logout} />
+        <NewButton text="log out" onPress={logout} />
       </View>
     </SafeAreaView>
   );

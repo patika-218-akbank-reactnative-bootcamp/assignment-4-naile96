@@ -1,5 +1,6 @@
-import {View, Button, Switch} from 'react-native';
+import {View, Switch} from 'react-native';
 import React, {useState} from 'react';
+import NewButton from '../components/NewButton';
 
 export default function Theme() {
   const [mode, setMode] = useState(false);
@@ -8,7 +9,7 @@ export default function Theme() {
     <View>
       <Switch value={mode} onValueChange={() => setMode(value => !value)} />
       <View>
-        <Button title="View Profile" />
+        <NewButton title="View Profile" />
       </View>
     </View>
   );

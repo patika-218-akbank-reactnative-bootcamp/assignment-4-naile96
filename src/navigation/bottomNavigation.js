@@ -22,7 +22,7 @@ const Stack = createStackNavigator();
 
 const ProfilesStackNavigation = () => {
   return (
-    <Stack.Navigator initialRouteName="SettingsScreen">
+    <Stack.Navigator initialRouteName="ProfileScreen">
       <Stack.Screen name="ThemeScreen" component={Theme} />
       <Stack.Screen name="ProfileScreen" component={ProfileScreen} />
       <Stack.Screen name="EditScreen" component={Edit} />
@@ -72,10 +72,10 @@ const BottomNavigation = () => {
         options={{
           headerShown: true,
           tabBarIcon: ({color}) => (
-            <Ionicons name="search" size={24} color={color} />
+            <Ionicons name="person-outline" size={24} color={color} />
           ),
         }}
-        name="Notifications"
+        name="Profile"
         component={ProfilesStackNavigation}
       />
     </BottomNav.Navigator>

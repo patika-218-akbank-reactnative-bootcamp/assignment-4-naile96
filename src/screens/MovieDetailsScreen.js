@@ -4,8 +4,7 @@ import React from 'react';
 import {useNavigation, useRoute} from '@react-navigation/native';
 
 const MovieDetailsScreen = () => {
-
-    const {setOptions} = useNavigation();
+  const {setOptions} = useNavigation();
   const {
     params: {id, text, owner},
   } = useRoute();
@@ -21,6 +20,3 @@ const MovieDetailsScreen = () => {
 };
 
 export default MovieDetailsScreen;
-
-
- 
